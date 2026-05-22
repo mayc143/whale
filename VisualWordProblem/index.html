@@ -338,7 +338,7 @@
             // Update Sentence Frame
             sentenceObject.textContent = pluralName;
 
-            // Render Objects (Fixed Path with './')
+            // Render Objects (images are stored in the same folder as index.html)
             renderImages(group1, num1, currentObject);
             renderImages(group2, num2, currentObject);
 
@@ -349,7 +349,7 @@
         function renderImages(container, count, objectId) {
             for (let i = 0; i < count; i++) {
                 const img = document.createElement('img');
-                img.src = `./Ocean_Friends/${objectId}.png`; // Uses corrected relative path
+            img.src = `./${objectId}.png`; // Images are in the same folder as index.html
                 img.alt = objectId;
                 img.className = 'object-img';
                 
