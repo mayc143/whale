@@ -16,7 +16,7 @@
             font-family: 'Comic Sans MS', 'Chalkboard SE', sans-serif;
             background-color: var(--bg-color);
             /* Background image support */
-            background-image: url('Background.png'); 
+            background-image: url('./Ocean_Friends/Background.png'); 
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -349,7 +349,7 @@
         function renderImages(container, count, objectId) {
             for (let i = 0; i < count; i++) {
                 const img = document.createElement('img');
-            img.src = `./${objectId}.png`; // Images are in the same folder as index.html
+                img.src = `./Ocean_Friends/${objectId}.png`; // Images moved into Ocean_Friends/
                 img.alt = objectId;
                 img.className = 'object-img';
                 
